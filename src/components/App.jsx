@@ -8,7 +8,7 @@ import initialContacts from './contacts.json';
 
 export default function App() {
   const [contacts, setContacts] = useState(
-    JSON.parse(localStorage.getItem('contacts')) ?? [initialContacts]
+    JSON.parse(localStorage.getItem('contacts')) ?? [initialContacts?.name]
   );
   const [filter, setFilter] = useState('');
 
